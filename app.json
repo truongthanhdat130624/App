@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "truongthanhdat",
+    "name": "truongthanhdats",
     "slug": "truongthanhdat",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mycompany.myapp"
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +28,19 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-build-properties"
+      
     ],
+    
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ef83ee81-3f85-41d9-a9eb-de7b9120ef5b"
+      }
     }
   }
 }
+
